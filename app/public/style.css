@@ -10,14 +10,14 @@ p {
   text-align: center;
 }
 
-.form {
+.form, .information {
 	padding: 1rem;
 	margin: 2rem 0;
 	border: 1px solid black;
 }
-.form label {
+.form label , .information label {
 	font-weight: bold;
 }
-.form div {
+.form div, .information div {
 	margin: 1rem 0;
 }
