@@ -17,13 +17,13 @@ app.use(express.json())
 app.use(express.static("public"))
 
 app.post("/", (req, res) => {
-
+	let body = req.body;
+	console.log(body)
 });
 
 app.get("/search", (req, res) => {
-
 });
 
 app.listen(port, hostname, () => {
-
+	console.log(`Listening at: http://${hostname}:${port}`);
 });
