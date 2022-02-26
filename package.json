@@ -1,0 +1,25 @@
+{
+  "name": "course-evalution",
+  "version": "1.0.0",
+  "description": "Project for CS375 - Course Evaluation\r Group name: VAL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shenlong3010/Course-Evalution.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shenlong3010/Course-Evalution/issues"
+  },
+  "homepage": "https://github.com/shenlong3010/Course-Evalution#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
