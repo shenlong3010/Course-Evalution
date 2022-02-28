@@ -14,15 +14,7 @@ button.addEventListener("click", function () {
 
     for (let i = 0; i < int_num; i++) {
         var tableRow = document.createElement("tr");
-        for (let key of ["title", "genre", "quality"]) {
-            let cell = document.createElement("td");
-            cell.textContent = row[key];
-            if (cell.textContent === "true")
-                cell.textContent = "Yes";
-            if (cell.textContent === "false")
-                cell.textContent = "No";
-            tableRow.append(cell);
-        }
+        tableRow.textContent = "A" + i;
         table.append(tableRow);
     }
 }
