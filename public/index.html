@@ -9,7 +9,6 @@
 
 <body>
 	<h1>Course Evaluation</h1>
-	<p>Welcome to Bamazon Books!</p>
 	<p>Please create your question survey</p>
 
 	<div class="information">
@@ -28,7 +27,6 @@
 	</div>
 
 	<div class="main_form">
-		<p>Select your question and type</p>
 		<form action="">
 			<div>
 				<label for="question_number">Enter number of question needs to add</label>
@@ -56,25 +54,46 @@
 	</div>
 	--> 
 	
-	<button id="submit">Add question to the survey</button>
-
 	<table>
-		<thead>
-			<tr>
-				<th for="question"> Question: </th>
-				<input id="question" type="text" name="question">
-				
-				<th for="type"> Type</th>
-				<select id="type" name="type">
-					<option value="">Please select which type of question</option>
-					<option value="MCQ">Multiple Choice</option>
-					<option value="Short/Long Answer">Short/Long Answer</option>
-					<option value="Checkbox">CheckBoxes</option>
-				</select>
-			</tr>
-		</thead>
-		<tbody id="ques_list"></tbody>
+		<tbody id="ques_list">
+			<!-- DOM needs to be made here to generate questions -->
+			<thead>
+				<tr>
+					<th for="question"> Question 1: </th>
+					<th> <input id="question" type="text" name="question"> </th>
+	
+					<th for="type"> Type: </th>
+					<th>
+					<select id="type" name="type">
+						<option value="">Please select which type of question</option>
+						<option value="MCQ">Multiple Choice</option>
+						<option value="Short/Long Answer">Short/Long Answer</option>
+						<option value="Checkbox">CheckBoxes</option>
+					</select>
+					</th>
+				</tr>
+			</thead>
+
+			<thead>
+				<tr>
+					<th for="question"> Question 2: </th>
+					<th> <input id="question" type="text" name="question"> </th>
+	
+					<th for="type"> Type: </th>
+					<th>
+					<select id="type" name="type">
+						<option value="">Please select which type of question</option>
+						<option value="MCQ">Multiple Choice</option>
+						<option value="Short/Long Answer">Short/Long Answer</option>
+						<option value="Checkbox">CheckBoxes</option>
+					</select>
+					</th>
+				</tr>
+			</thead>
+		</tbody>
 	</table>
+
+	<button id="submit">Complete creating the survey</button>
 
 	<div id="message"></div>
 
