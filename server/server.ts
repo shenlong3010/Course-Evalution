@@ -9,11 +9,6 @@ const env = require("../env.json")
 const Pool = pg.Pool;
 const pool = new Pool(env);
 
-const firstName = document.getElementById("first_name");
-const lastName = document.getElementById("last_name");
-const email = document.getElementById("email");
-const Course_id = document.getElementById("Course_id");
-
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });
