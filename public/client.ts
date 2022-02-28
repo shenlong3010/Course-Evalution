@@ -14,7 +14,8 @@ button.addEventListener("click", function () {
 
     for (let i = 0; i < int_num; i++) {
         var tableRow = document.createElement("tr");
-        tableRow.textContent = "A" + i;
+        console.log(i);
+        tableRow.textContent = "A";
         table.append(tableRow);
     }
 }
