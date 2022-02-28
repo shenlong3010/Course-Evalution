@@ -10,7 +10,8 @@ button.addEventListener("click", function () {
     var int_num = +num;
     for (var i = 0; i < int_num; i++) {
         var tableRow = document.createElement("tr");
-        tableRow.textContent = "A" + i;
+        console.log(i);
+        tableRow.textContent = "A";
         table.append(tableRow);
     }
 });
