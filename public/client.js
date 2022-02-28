@@ -7,9 +7,10 @@ var table = document.getElementById("ques_list");
 var button1 = document.getElementById("number");
 var button2 = document.getElementById("submit");
 button1.addEventListener("click", function () {
-    var num = document.getElementById("ques_num").value;
-    console.log(num);
-    var int_num = +num;
+    console.log("I love u");
+    // var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
+    // console.log(num);
+    // var int_num: number = +num;
     // for (let i = 0; i < 10; i++) {
     //     //var tableRow = document.createElement("tr");
     //     console.log(i);
