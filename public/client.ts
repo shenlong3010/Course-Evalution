@@ -10,9 +10,10 @@ const button1 = document.getElementById("number");
 const button2 = document.getElementById("submit");
 
 button1.addEventListener("click", function () {
-    var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
-    console.log(num);
-    var int_num: number = +num;
+    console.log("Testing");
+    // var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
+    // console.log(num);
+    // var int_num: number = +num;
 
     // for (let i = 0; i < 10; i++) {
     //     //var tableRow = document.createElement("tr");
