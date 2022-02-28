@@ -7,39 +7,62 @@
 </head>
 <body>
 	<h1>Course Evaluation</h1>
+	<p>Welcome to Bamazon Books!</p>
 	<p>Please create your question survey</p>
-	<div class="information">
-	    <div>
-	      <label for="first_name">First Name:</label>
-	      <input id="first_name" type="text" name="first_name" required>
-	      <label for="last_name">Last Name:</label>
-	      <input id="last_name" type="text" name="last_name" required>
-	    </div>
-	    <div>
-	      <label for="email">Email Id:</label>
-	      <input id="email" type="text" name="email" required>
-	      <label for="Course_id">Course ID:</label>
-	      <input id="Course_id" type="text" name="Course_id" required>
-	    </div>
-  	</div>
+
+  <div class="information">
+    <div>
+      <label for="first_name">First Name:</label>
+      <input id="first_name" type="text" name="first_name" required>
+      <label for="last_name">Last Name:</label>
+      <input id="last_name" type="text" name="last_name" required>
+    </div>
+    <div>
+      <label for="email">Email Id:</label>
+      <input id="email" type="text" name="email">
+      <label for="Course_id">Course ID:</label>
+      <input id="Course_id" type="text" name="Course_id">
+    </div>
+  </div>
+  
+  <div class="main_form">
+    <p>Select your question and type</p>
+    <form action="">
+    <div>
+			<label for="question_number">Enter number of question needs to add</label>
+			<input id="question_number" type="number" name="question_number">
+      <input type="submit" value="Enter">
+		</div>
+  </form>
+  </div>
+
 	<div class="form">
 		<div>
 			<label for="question">Question:</label>
-			<input id="question" type="text" name="question" required>
+			<input id="question" type="text" name="question">
 		</div>
 		<div>
-      			<label for="type">Type:</label>
+      <label for="type">Type:</label>
 			<select id="type" name="type">
 				<option value="">Please select which type of question</option>
 				<option value="MCQ">Multiple Choice</option>
 				<option value="Short/Long Answer">Short/Long Answer</option>
-        			<option value="Checkbox">CheckBoxes</option>
-      			</select>
-    		</div>
+        <option value="Checkbox">CheckBoxes</option>
+      </select>
+    </div>
 		<button id="submit">Add question to the survey</button>
 	</div>
 
-  	<div id="message"></div>
+  <div id="message"></div>
+
+  <table>
+	<thead>
+		<tr><th>Question:</th></tr>
+    <tr><th>Genre</th></tr>
+    <tr><th>Is it good?</th></tr>
+	</thead>
+	<tbody id="queue"></tbody>
+</table>
   
 	<script src="client.js"></script>
 </body>
