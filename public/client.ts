@@ -11,13 +11,14 @@ const button2 = document.getElementById("submit");
 
 button1.addEventListener("click", function () {
     var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
+    console.log(num);
     var int_num: number = +num;
 
-    for (let i = 0; i < 10; i++) {
-        //var tableRow = document.createElement("tr");
-        console.log(i);
-        //tableRow.textContent = "A";
-        //table.append(tableRow);
-    }
+    // for (let i = 0; i < 10; i++) {
+    //     //var tableRow = document.createElement("tr");
+    //     console.log(i);
+    //     //tableRow.textContent = "A";
+    //     //table.append(tableRow);
+    // }
 }
 );
