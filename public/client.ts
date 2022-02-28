@@ -6,17 +6,18 @@ const Course_id = document.getElementById("Course_id");
 const ques_num = document.getElementById("question_number");
 const table = document.getElementById("ques_list");
 
-const button = document.getElementById("submit");
+const button1 = document.getElementById("number");
+const button2 = document.getElementById("submit");
 
-button.addEventListener("click", function () {
+button1.addEventListener("click", function () {
     var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
     var int_num: number = +num;
 
-    for (let i = 0; i < int_num; i++) {
-        var tableRow = document.createElement("tr");
+    for (let i = 0; i < 10; i++) {
+        //var tableRow = document.createElement("tr");
         console.log(i);
-        tableRow.textContent = "A";
-        table.append(tableRow);
+        //tableRow.textContent = "A";
+        //table.append(tableRow);
     }
 }
 );
