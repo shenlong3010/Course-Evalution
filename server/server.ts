@@ -8,9 +8,9 @@ app.use(express.static("public"));
 const port = 3000;
 const hostname = "localhost";
 
-const env = require("../env.json")
-const Pool = pg.Pool;
-const pool = new Pool(env);
+// const env = require("../env.json")
+// const Pool = pg.Pool;
+// const pool = new Pool(env);
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
