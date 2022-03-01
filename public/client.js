@@ -7,7 +7,7 @@ var table = document.getElementById("ques_list");
 var button1 = document.getElementById("number");
 var button2 = document.getElementById("submit");
 button1.addEventListener("click", function () {
-    console.log("I love u");
+    console.log("Testing");
     // var num = (<HTMLInputElement>document.getElementById("ques_num")).value;
     // console.log(num);
     // var int_num: number = +num;
