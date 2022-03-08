@@ -1,5 +1,5 @@
 {
-  "name": "course-evalution",
+  "name": "express",
   "version": "1.0.0",
   "description": "Project for CS375 - Course Evaluation\r Group name: VAL",
   "main": "index.js",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/shenlong3010/Course-Evalution#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "pool": "^0.4.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",

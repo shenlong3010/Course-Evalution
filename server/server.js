@@ -12,5 +12,5 @@ app.get('/', function (req, res) {
     res.send('Hello World!');
 });
 app.listen(port, hostname, function () {
-    return console.log("Listening at: http://" + hostname + ":" + port);
+    return console.log(`Listening at: http://${hostname}:${port}`);
 });
