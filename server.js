@@ -10,7 +10,7 @@ var path = require('path');
 // const Pool = pg.Pool;
 // const pool = new Pool(env);
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(__dirname + "/" + "public");
 });
 app.listen(port, hostname, function () {
     return console.log(`Listening at: http://${hostname}:${port}`);

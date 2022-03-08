@@ -14,6 +14,7 @@ const path = require('path');
 // const pool = new Pool(env);
 
 app.get('/', (req, res) => {
+<<<<<<< HEAD:server/server.ts
   res.sendFile(path.join(__dirname, '/index.html'));
   let body = req.body;
   console.log(body);
@@ -32,6 +33,9 @@ app.get('/', (req, res) => {
   const insertVal = "INSERT INTO "
 
 
+=======
+  res.sendFile(__dirname + "/" + "public");
+>>>>>>> d6541705b1c66b137a9361de80d6aef81d422c54:server.ts
 });
 
 app.listen(port, hostname, () => {
