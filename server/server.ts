@@ -15,6 +15,22 @@ const path = require('path');
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'));
+  let body = req.body;
+  console.log(body);
+  // check property of the body
+
+  let exist = false
+  // check table exist
+  if (!exist) {
+    const createTable = "CREATE TABLE evaluation_forms";
+  }
+  /* Table
+   * Name:
+   * Column:
+   * Row:
+   */
+  const insertVal = "INSERT INTO "
+
 
 });
 
