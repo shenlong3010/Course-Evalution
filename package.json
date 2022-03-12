@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "express",
-=======
-  "name": "server",
->>>>>>> d6541705b1c66b137a9361de80d6aef81d422c54
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
@@ -27,7 +23,6 @@
     "typescipt": "^1.0.0"
   },
   "dependencies": {
-<<<<<<< HEAD
     "express": "^4.17.3",
     "pg": "^8.7.3",
     "pool": "^0.4.1"
@@ -35,11 +30,5 @@
   "devDependencies": {
     "@types/node": "^17.0.21",
     "typescript": "^4.5.5"
-=======
-    "express": "^4.17.1",
-    "pg": "^8.7.3",
-    "postgres": "^1.0.2",
-    "psql": "^0.0.1"
->>>>>>> d6541705b1c66b137a9361de80d6aef81d422c54
   }
 }
