@@ -45,7 +45,14 @@
 			<button id="question_generate">Create a list of questions</button>
 	</div>
 
-	<!--
+	<!-- Short Answer --> 
+	
+	<div class="form">
+		<div>
+			<label for="question">Question:</label>
+			<input id="question" type="text" name="question">
+		</div>
+	</div>
 	
 	<div class="form">
 		<div>
@@ -62,8 +69,22 @@
 			</select>
 		</div>
 	</div>
-	
-	--> 
+
+	<div class="form">
+		<div>
+			<label for="question">Question:</label>
+			<input id="question" type="text" name="question">
+		</div>
+		<div>
+			<label for="type">Type:</label>
+			<select id="type" name="type">
+				<option value="">Please select which type of question</option>
+				<option value="MCQ">Multiple Choice</option>
+				<option value="Short/Long Answer">Short/Long Answer</option>
+				<option value="Checkbox">CheckBoxes</option>
+			</select>
+		</div>
+	</div>
 	
 	<div id="mcq_list">
 	</div>
