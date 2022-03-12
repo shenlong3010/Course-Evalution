@@ -12,8 +12,6 @@ const mcq_list = document.getElementById("mcq_list");
 const cbq_list = document.getElementById("cb_list");
 const saq_list = document.getElementById("sa_list");
 
-//const message = document.getElementById("message");
-
 button1.addEventListener("click", function () {
     const mcq_number = (<HTMLInputElement>document.getElementById("mcq_number")).value;
     const cb_number = (<HTMLInputElement>document.getElementById("cb_number")).value;
@@ -23,11 +21,30 @@ button1.addEventListener("click", function () {
     var int_cb_num: number = +cb_number;
     var int_sa_num: number = +sa_number;
 
-    //message.textContent = "" + int_mcq_num + ", " + int_cb_num + ", " + int_sa_num;
+    if (int_mcq_num == 0) {
+        mcq_list.textContent = "";
+    }
+    else {
+        for (let i = 0; i < int_mcq_num; i++) {
+        
+        }
+    }
+    
+    if (int_cb_num == 0) {
+        cbq_list.textContent = "";
+    }
+    else {
+        for (let i = 0; i < int_cb_num; i++) {
+        
+        }
+    }
 
-    for (let i = 0; i < 10; i++) {
-        //var tableRow = document.createElement("tr");
-        //tableRow.textContent = "A";
-        //table.append(tableRow);
+    if (int_sa_num == 0) {
+        saq_list.textContent = "";
+    }
+    else {
+        for (let i = 0; i < int_sa_num; i++) {
+        
+        }
     }
 });
