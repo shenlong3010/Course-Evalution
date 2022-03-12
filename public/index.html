@@ -28,10 +28,21 @@
 
 	<div class="main_form">
 			<div>
-				<label for="question_number">Enter number of question needs to add</label>
-				<input id="question_number" type="number" name="question_number">
-				<button id="number">Enter</button>
+				<label for="mcq_number">Enter number of Multiple choices questions needs to add</label>
+				<input id="mcq_number" type="number" name="mcq_number">
 			</div>
+
+			<div>
+				<label for="cb_number">Enter number of Check Box questions needs to add</label>
+				<input id="cb_number" type="number" name="cb_number">
+			</div>
+
+			<div>
+				<label for="sa_number">Enter number of short answer questions needs to add</label>
+				<input id="sa_number" type="number" name="sa_number">
+			</div>
+
+			<button id="question_generate">Create a list of questions</button>
 	</div>
 
 	<!--
@@ -54,44 +65,8 @@
 	
 	--> 
 	
-	<table>
-		<tbody id="ques_list">
-			<!-- DOM needs to be made here to generate questions -->
-			<thead>
-				<tr>
-					<th for="question"> Question 1: </th>
-					<th> <input id="question" type="text" name="question"> </th>
-	
-					<th for="type"> Type: </th>
-					<th>
-					<select id="type" name="type">
-						<option value="">Please select which type of question</option>
-						<option value="MCQ">Multiple Choice</option>
-						<option value="Short/Long Answer">Short/Long Answer</option>
-						<option value="Checkbox">CheckBoxes</option>
-					</select>
-					</th>
-				</tr>
-			</thead>
-
-			<thead>
-				<tr>
-					<th for="question"> Question 2: </th>
-					<th> <input id="question" type="text" name="question"> </th>
-	
-					<th for="type"> Type: </th>
-					<th>
-					<select id="type" name="type">
-						<option value="">Please select which type of question</option>
-						<option value="MCQ">Multiple Choice</option>
-						<option value="Short/Long Answer">Short/Long Answer</option>
-						<option value="Checkbox">CheckBoxes</option>
-					</select>
-					</th>
-				</tr>
-			</thead>
-		</tbody>
-	</table>
+	<div id="message">
+	</div>
 
 	<button id="submit">Complete creating the survey</button>
 
