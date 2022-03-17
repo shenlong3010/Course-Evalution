@@ -13,7 +13,6 @@ button.addEventListener("click", function() {
 
     removeChildren(table);
     message.textContent="";
-	let genre = dropdown.value;
 	fetch(`/search?course_id=${course_id}`).then(async function (response) {
 		console.log(response);
 		if (response.status === 200) {
