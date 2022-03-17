@@ -27,65 +27,70 @@
 	</div>
 
 	<div class="main_form">
-			<div>
-				<label for="mcq_number">Enter number of Multiple choices questions needs to add</label>
-				<input id="mcq_number" type="number" name="mcq_number">
-			</div>
+		<div>
+			<label for="mcq_number">Enter number of Multiple choices questions needs to add</label>
+			<input id="mcq_number" type="number" name="mcq_number">
+		</div>
 
-			<div>
-				<label for="cb_number">Enter number of Check Box questions needs to add</label>
-				<input id="cb_number" type="number" name="cb_number">
-			</div>
+		<div>
+			<label for="cb_number">Enter number of Check Box questions needs to add</label>
+			<input id="cb_number" type="number" name="cb_number">
+		</div>
 
-			<div>
-				<label for="sa_number">Enter number of short answer questions needs to add</label>
-				<input id="sa_number" type="number" name="sa_number">
-			</div>
+		<div>
+			<label for="sa_number">Enter number of short answer questions needs to add</label>
+			<input id="sa_number" type="number" name="sa_number">
+		</div>
 
-			<button id="question_generate">Create a list of questions</button>
+		<button id="question_generate">Create a list of questions</button>
 	</div>
 
-	<!-- Short Answer --> 
-	
-	<div class="form">
-		<div>
-			<label for="question">Question:</label>
-			<input id="question" type="text" name="question">
-		</div>
-	</div>
-	
-	<div class="form">
-		<div>
-			<label for="question">Question:</label>
-			<input id="question" type="text" name="question">
-		</div>
-		<div>
-			<label for="type">Type:</label>
-			<select id="type" name="type">
-				<option value="">Please select which type of question</option>
-				<option value="MCQ">Multiple Choice</option>
-				<option value="Short/Long Answer">Short/Long Answer</option>
-				<option value="Checkbox">CheckBoxes</option>
-			</select>
-		</div>
-	</div>
+	<!-- Short Answer -->
 
 	<div class="form">
 		<div>
-			<label for="question">Question:</label>
-			<input id="question" type="text" name="question">
-		</div>
-		<div>
-			<label for="type">Type:</label>
-			<select id="type" name="type">
-				<option value="">Please select which type of question</option>
-				<option value="MCQ">Multiple Choice</option>
-				<option value="Short/Long Answer">Short/Long Answer</option>
-				<option value="Checkbox">CheckBoxes</option>
-			</select>
+			<label for="question">Short Answer Question 1:</label>
+			<input id="sa1" type="text" name="sa1">
 		</div>
 	</div>
-	
+
+	<!-- Multiple Choice -->
+	<div class="form">
+		<div>
+			<label for="question">Multiple Choice Question 1:</label>
+			<input id="mcq1" type="text" name="mcq1">
+			<div>
+				<label>Option A:</label>
+				<input id="mcq1a" type="text" name="mcq1a">
+				<label>Option B:</label>
+				<input id="mcq1b" type="text" name="mcq1b">
+				<label>Option C:</label>
+				<input id="mcq1c" type="text" name="mcq1c">
+				<label>Option D:</label>
+				<input id="mcq1d" type="text" name="mcq1d">
+			</div>
+		</div>
+	</div>
+
+	<!-- Check Box -->
+	<div class="form">
+		<div>
+			<label for="question">Checkbox Question 1:</label>
+			<input id="cb1" type="text" name="cb1">
+			<div>
+				<label>Option A:</label>
+				<input id="cb1a" type="text" name="cb1a">
+				<label>Option B:</label>
+				<input id="cb1b" type="text" name="cb1b">
+				<label>Option C:</label>
+				<input id="cb1c" type="text" name="cb1c">
+				<label>Option D:</label>
+				<input id="cb1d" type="text" name="cb1d">
+			</div>
+
+		</div>
+	</div>
+
 	<div id="mcq_list">
 	</div>
 
@@ -94,9 +99,9 @@
 
 	<div id="sa_list">
 	</div>
-	
+
 	<button id="submit">Complete creating the survey</button>
-	
+
 	<script src="client.js"></script>
 </body>-
 
