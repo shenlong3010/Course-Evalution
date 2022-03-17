@@ -21,12 +21,45 @@ button1.addEventListener("click", function () {
     var int_cb_num: number = +cb_number;
     var int_sa_num: number = +sa_number;
 
+    mcq_list.textContent = "";
+    cbq_list.textContent = "";
+    saq_list.textContent = "";
+
+    if (int_sa_num == 0) {
+        saq_list.textContent = "";
+    }
+    else {
+        for (let i = 0; i < int_sa_num; i++) {
+            const div1 = document.createElement('div');
+            div1.setAttribute('class','form');
+            const div2 = document.createElement('div');
+            
+            // <label for="question">Short Answer Question 1:</label>          
+           const label = document.createElement('label');
+           label.setAttribute('for','question');
+           const id = i.toString();
+           label.textContent = "Short Answer Question " + id;
+           
+
+			// <input id="sa1" type="text" name="sa1">
+            const input = document.createElement('input');
+            const qid = "sa" + id;
+            input.setAttribute('id', qid);
+            input.setAttribute('type', 'text');
+            input.setAttribute('name', qid);
+            
+            div2.append(label);
+            div2.append(input);
+            div1.append(div2);
+        }
+    }
+
     if (int_mcq_num == 0) {
         mcq_list.textContent = "";
     }
     else {
         for (let i = 0; i < int_mcq_num; i++) {
-        
+            
         }
     }
     
@@ -39,12 +72,4 @@ button1.addEventListener("click", function () {
         }
     }
 
-    if (int_sa_num == 0) {
-        saq_list.textContent = "";
-    }
-    else {
-        for (let i = 0; i < int_sa_num; i++) {
-        
-        }
-    }
 });
