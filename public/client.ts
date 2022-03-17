@@ -29,7 +29,7 @@ button1.addEventListener("click", function () {
         saq_list.textContent = "";
     }
     else {
-        for (let i = 0; i < int_sa_num; i++) {
+        for (let i = 1; i <= int_sa_num; i++) {
             const div1 = document.createElement('div');
             div1.setAttribute('class', 'form');
             const div2 = document.createElement('div');
@@ -59,7 +59,7 @@ button1.addEventListener("click", function () {
         mcq_list.textContent = "";
     }
     else {
-        for (let i = 0; i < int_mcq_num; i++) {
+        for (let i = 1; i <= int_mcq_num; i++) {
 
             /*
             <div class="form">
@@ -156,7 +156,7 @@ button1.addEventListener("click", function () {
         cbq_list.textContent = "";
     }
     else {
-        for (let i = 0; i < int_cb_num; i++) {
+        for (let i = 1; i <= int_cb_num; i++) {
             const div1 = document.createElement('div');
             div1.setAttribute('class', 'form');
             const div2 = document.createElement('div');
