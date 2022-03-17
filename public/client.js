@@ -119,6 +119,7 @@ button1.addEventListener("click", function () {
             div3.append(inputd);
             div2.append(div3);
             div1.append(div2);
+            mcq_list.append(div1);
         }
     }
     if (int_cb_num == 0) {
@@ -179,6 +180,7 @@ button1.addEventListener("click", function () {
             div3.append(inputd);
             div2.append(div3);
             div1.append(div2);
+            cbq_list.append(div1);
         }
     }
 });
